@@ -1,0 +1,6 @@
+@Resenhario.Api_HostAddress = http://localhost:5131
+
+GET {{Resenhario.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

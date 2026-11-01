@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes - Resenhário</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="topo">
+        <a class="marca" href="../index.html">Resenhário</a>
+
+        <nav>
+            <a href="../index.html">Início</a>
+            <a href="livros.html">Livros</a>
+            <a href="filmes.html">Filmes</a>
+            <a href="series.html">Séries</a>
+            <a href="feed.html">Feed</a><a href="ranking.html">Ranking</a>
+            <a href="estante.html">Minha estante</a>
+            <a href="reviews.html">Resenhas</a>
+            <a href="login.html">Entrar</a>
+        </nav>
+    </header>
+
+    <main class="pagina">
+        <section class="cabecalho-pagina">
+            <p class="sobretitulo">HISTÓRIAS QUE GANHAM VIDA</p>
+            <h1>Filmes</h1>
+            <p>Pesquise filmes e adicione seus favoritos ao catálogo.</p>
+        </section>
+
+        <section class="secao">
+            <h2>Pesquisar filmes</h2>
+
+            <form id="form-busca-filmes">
+                <input
+                    type="text"
+                    id="termo-filme"
+                    placeholder="Digite o nome do filme"
+                    required
+                >
+                <button type="submit">Pesquisar</button>
+            </form>
+
+            <p id="mensagem-busca-filmes"
+               class="mensagem"
+               aria-live="polite"></p>
+
+            <div id="resultados-filmes" class="grade-capas"></div>
+        </section>
+
+        <section class="secao">
+            <h2>Vincular livro e adaptação</h2>
+            <p>Selecione um livro e um filme já cadastrados para registrar a relação entre as duas obras.</p>
+            <form id="form-vincular-adaptacao">
+                <label for="adaptacao-livro">Livro</label>
+                <select id="adaptacao-livro" required><option value="">Carregando livros...</option></select>
+                <label for="adaptacao-filme">Filme</label>
+                <select id="adaptacao-filme" required><option value="">Carregando filmes...</option></select>
+                <button type="submit">Vincular adaptação</button>
+            </form>
+            <p id="mensagem-adaptacoes" class="mensagem" aria-live="polite"></p>
+            <div id="lista-adaptacoes" class="lista-reviews"></div>
+        </section>
+
+        <section class="secao">
+            <h2>Filmes cadastrados</h2>
+
+            <div id="lista-filmes" class="grade-capas"></div>
+
+            <p id="mensagem-filmes"
+               class="mensagem"
+               aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>© 2026 Resenhário · Histórias para ler e assistir.</footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

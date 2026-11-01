@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resenhas - Resenhário</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="topo"><a class="marca" href="../index.html">Resenhário</a><nav>
+    <a href="../index.html">Início</a><a href="livros.html">Livros</a><a href="filmes.html">Filmes</a>
+    <a href="series.html">Séries</a>
+            <a href="feed.html">Feed</a><a href="ranking.html">Ranking</a><a href="estante.html">Minha estante</a><a href="reviews.html">Resenhas</a><a href="login.html">Entrar</a>
+</nav></header>
+<main class="pagina">
+    <section class="cabecalho-pagina"><p class="sobretitulo">OPINIÕES DA COMUNIDADE</p><h1>Resenhas</h1><p>Avalie a qualidade do livro e, se desejar, a fidelidade de sua adaptação cinematográfica.</p></section>
+    <section class="secao">
+        <h2>Escrever resenha</h2>
+        <form id="form-review">
+            <label for="review-livro">Livro</label>
+            <select id="review-livro" required><option value="">Carregando livros...</option></select>
+            <label for="review-nota">Qualidade literária (1 a 5 estrelas)</label>
+            <input id="review-nota" type="number" min="1" max="5" step="1" required>
+            <label for="review-adaptacao">Adaptação cinematográfica (opcional)</label>
+            <select id="review-adaptacao"><option value="">Não avaliar uma adaptação</option></select>
+            <label for="review-nota-fidelidade">Fidelidade da adaptação (1 a 5 estrelas)</label>
+            <input id="review-nota-fidelidade" type="number" min="1" max="5" step="1" disabled>
+            <label for="review-comentario">Sua resenha</label>
+            <textarea id="review-comentario" rows="4" maxlength="5000" required placeholder="O que achou da história?"></textarea>
+            <button type="submit">Publicar resenha</button>
+        </form>
+        <p id="mensagem-reviews" class="mensagem" aria-live="polite"></p>
+    </section>
+    <section class="secao"><h2>Ranking de adaptações</h2><p id="mensagem-ranking" class="mensagem" aria-live="polite"></p><div id="ranking-adaptacoes" class="lista-reviews"></div></section>
+    <section class="secao"><h2>Resenhas da comunidade</h2><div id="lista-reviews" class="lista-reviews"></div></section>
+</main>
+<footer>© 2026 Resenhário · Histórias para ler e assistir.</footer>
+<script src="../js/script.js"></script>
+</body></html>

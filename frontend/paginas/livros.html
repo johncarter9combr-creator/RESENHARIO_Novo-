@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros - Resenhário</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="topo">
+        <a class="marca" href="../index.html">Resenhário</a>
+        <nav>
+            <a href="../index.html">Início</a>
+            <a href="livros.html">Livros</a>
+            <a href="filmes.html">Filmes</a>
+            <a href="series.html">Séries</a>
+            <a href="feed.html">Feed</a><a href="ranking.html">Ranking</a>
+            <a href="estante.html">Minha estante</a>
+            <a href="reviews.html">Resenhas</a>
+            <a href="login.html">Entrar</a>
+        </nav>
+    </header>
+
+    <main class="pagina">
+        <section class="cabecalho-pagina">
+            <p class="sobretitulo">DESCUBRA SUA PRÓXIMA LEITURA</p>
+            <h1>Livros</h1>
+            <p>Pesquise livros e compartilhe suas histórias favoritas.</p>
+        </section>
+
+        <section class="busca">
+            <form id="form-busca-livros">
+                <input id="termo-livro" type="search"
+                       placeholder="Digite título, autor ou ISBN..."
+                       required>
+                <button type="submit">Pesquisar</button>
+            </form>
+            <p id="mensagem-busca" class="mensagem" aria-live="polite"></p>
+            <div id="resultados-busca" class="grade-capas"></div>
+        </section>
+
+        <section class="secao">
+            <h2>Catálogo do Resenhário</h2>
+            <div id="lista-livros" class="grade-capas"></div>
+            <p id="mensagem-catalogo" class="mensagem" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>© 2026 Resenhário · Histórias para ler e assistir.</footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>
